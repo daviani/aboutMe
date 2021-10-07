@@ -2,10 +2,26 @@ module.exports = {
   // Uncomment the line below to enable the experimental Just-in-Time ("JIT") mode.
   // https://tailwindcss.com/docs/just-in-time-mode
   // mode: "jit",
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        negative: 'var(--color-negative)',
+        positive: 'var(--color-positive)',
+        'primary-background': 'var(--background-primary)',
+        'sec-background': 'var(--background-sec)',
+        'primary-text': 'var(--color-text-primary)',
+      },
+    },
+    backgroundColor: (theme) => ({
+      ...theme('colors'),
+    }),
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['active'],
+  },
   plugins: [],
   purge: {
     // Filenames to scan for classes

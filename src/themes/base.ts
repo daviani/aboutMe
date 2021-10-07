@@ -1,4 +1,4 @@
-export default {
+export const base = {
     primary: '#81A1C1',
     secondary: '#5E81AC',
     negative: '#BF616A',

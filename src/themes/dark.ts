@@ -1,5 +1,5 @@
-import { extend } from './utils';
-import base from './base';
+import {extend} from './utils';
+import {base} from './base';
 
 export default extend(base, {
     backgroundPrimary: '#2E3440',

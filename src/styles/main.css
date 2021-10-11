@@ -1,3 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
+.config_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .dropdown:focus-within .dropdown-menu {
     opacity:1;
     transform: translate(0) scale(1);

@@ -12,7 +12,8 @@ export const SwitchTheme: React.FunctionComponent<SwitchThemeProps> =
     ({
          onClick = () => {
          }
-     }: SwitchThemeProps) => {
+     }
+         : SwitchThemeProps) => {
         const [theme, setTheme] = useState(DEFAULT_THEME);
 
         useEffect(() => {
@@ -20,16 +21,19 @@ export const SwitchTheme: React.FunctionComponent<SwitchThemeProps> =
         }, [theme])
 
         return (
-            <button className='outline-none focus:outline-none px-4 py-2 text-primary' type='button' onClick={() => onClick()}>
-                    {theme === 'base' ? (
-                        <div onClick={() => setTheme('dark')}>
-                            <FontAwesomeIcon icon={faMoon} />
-                        </div>
-                    ) : (
-                        <div onClick={() => setTheme('base')}>
-                            <FontAwesomeIcon icon={faSun} />
-                        </div>
-                    )}
+            <button className='outline-none focus:outline-none px-4 py-2 text-primary'
+                    type='button'
+                    onClick={() => onClick()}
+            >
+                {theme === 'base' ? (
+                    <div onClick={() => setTheme('dark')}>
+                        <FontAwesomeIcon icon={faMoon} />
+                    </div>
+                ) : (
+                    <div onClick={() => setTheme('base')}>
+                        <FontAwesomeIcon icon={faSun} />
+                    </div>
+                )}
             </button>
         )
     }

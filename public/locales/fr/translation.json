@@ -1,6 +1,6 @@
-
 {
-  "maintitle": "Bienvenue dans une APP internationalisée",
+  "header_title": "Passionate web developer !",
+  "header_subtitle": "A l'écoute pour un job en javascript à Lyon||full remote ['ReactJS', 'NextJS', 'VueJS']",
   "description": {
     "part1": "Pour commencer, modifiez <>src/App.js</> et enregistrez pour recharger.",
     "part2": "Changez la langue entre l'anglais et le francais en utilisant les boutons ci-dessus."

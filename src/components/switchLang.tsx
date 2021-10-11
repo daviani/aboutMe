@@ -5,7 +5,6 @@ import {useTranslation} from "react-i18next";
 
 const SwitchLang = () => {
     const {i18n} = useTranslation();
-    console.log('i18n', i18n)
     const changeLanguage = (language: any) => {
         i18n.changeLanguage(language);
     };
@@ -24,14 +23,18 @@ const SwitchLang = () => {
                     >
                         <div className='px-4 py-3 text-primary'>
 
-                            <button className={(i18n.language === 'fr' ? 'text-base font-semibold' : 'text-sm' )}
-                                    onClick={() => changeLanguage("fr")}
+                            <button
+                                className={(i18n.language === 'fr' ? 'text-base font-semibold cursor-not-allowed' : 'text-sm')}
+                                onClick={() => changeLanguage("fr")}
+                                disabled={i18n.language === 'fr'}
                             >
                                 Français
                             </button>
 
-                            <button className={(i18n.language === 'en' ? 'text-base font-semibold' : 'text-sm' )}
-                                    onClick={() => changeLanguage("en")}
+                            <button
+                                className={(i18n.language === 'en' ? 'text-base font-semibold cursor-not-allowed' : 'text-sm')}
+                                onClick={() => changeLanguage("en")}
+                                disabled={i18n.language === 'en'}
                             >
                                 English
                             </button>

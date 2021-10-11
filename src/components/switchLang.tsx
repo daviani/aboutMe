@@ -18,7 +18,7 @@ const SwitchLang = () => {
                     className='opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95'
                 >
                     <div
-                        className='absolute right-0 mt-2 origin-top-right bg-secondary rounded-md shadow-lg outline-none'
+                        className='absolute right-0 mt-2 origin-top-right bg-secondary-background rounded-md shadow-lg outline-none'
                         role='menu'
                     >
                         <div className='px-4 py-3 text-primary'>

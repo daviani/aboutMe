@@ -1,8 +1,10 @@
 {
   "header_title": "Passionate web developer !",
-  "header_subtitle": "Listening for a javascript job in Lyon||full remote ['ReactJS', 'NextJS', 'VueJS']\nListening for a javascript job in Lyon||full remote ['ReactJS', 'NextJS', 'VueJS']",
-  "description": {
-    "part1": "To get started, edit <>src/App.js</> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  }
+  "header_subtitle": "Listening for a javascript job in Lyon||full remote ['ReactJS', 'NextJS', 'VueJS']",
+
+  "footer_title": "AboutMe",
+  "footer_main-title": "Designed and developed with",
+  "footer_main-subtitle": "by Daviani.",
+  "footer_git-label": "GitHub",
+  "footer_git-url" : "https://github.com/daviani/aboutMe"
 }

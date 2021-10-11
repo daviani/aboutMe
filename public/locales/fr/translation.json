@@ -1,0 +1,8 @@
+
+{
+  "maintitle": "Bienvenue dans une APP internationalisée",
+  "description": {
+    "part1": "Pour commencer, modifiez <>src/App.js</> et enregistrez pour recharger.",
+    "part2": "Changez la langue entre l'anglais et le francais en utilisant les boutons ci-dessus."
+  }
+}

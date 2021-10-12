@@ -15,8 +15,10 @@ export const mapTheme: (variables: ITheme) => IMappedTheme = (variables: ITheme)
     return {
         '--color-primary': variables.primary || '',
         '--color-secondary': variables.secondary || '',
+        '--color-positive': variables.positive || '',
+        '--color-negative': variables.negative || '',
         '--background-primary': variables.primaryBackground || '',
-        '--background-secondary': variables.secondaryBackground || '',
+        '--background-sec': variables.backgroundSecondary || '',
     }
 }
 

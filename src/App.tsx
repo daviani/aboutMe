@@ -16,8 +16,10 @@ function App() {
             </div>
             <div className=' p-4 w-1/2 mx-auto  '>
                 {sections.map((section) =>
-                    <>
-                        <p className='text-2xl font-extrabold text-center text-primary'>{section.title}</p>
+                    <div key={section.title} >
+                        <p className='text-3xl font-extrabold text-center text-primary mt-2.5'>
+                            {section.title}
+                        </p>
                         {section.items.map((item) =>
                             <div key={item.id}
                             >
@@ -28,7 +30,7 @@ function App() {
                                 />
                             </div>,
                         )}
-                    </>,
+                    </div>,
                 )}
             </div>
             <div className='bg-primary-background w-full '>

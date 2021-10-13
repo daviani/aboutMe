@@ -8,9 +8,8 @@ const Footer = () => {
     return (
         <footer className='w-full py-5 px-4 '>
             <div className='flex items-center justify-between'>
-                <div className='inline-flex items-center'>
-                    <div className='w-3 h-3 p-2 mr-2 rounded-full bg-gradient-to-tr from-secondary to-primary'>
-                    </div>
+                <div className='inline-flex items-center '>
+                    <div className='w-3 h-3 p-2 mr-2 rounded-full bg-gradient-to-tr from-secondary to-negative' />
                     <h2
                         className='block p-2 text-xl font-medium tracking-tighter text-primary lg:text-x lg:mr-8'
                     >
@@ -22,7 +21,7 @@ const Footer = () => {
                     <FontAwesomeIcon className='mx-1 mt-0 sm:mt-1' icon={faHeart} />
                     {t("footer_main-subtitle")}
                 </p>
-                <div className='flex items-center'>
+                <div className='footer_box'>
                     <span className='inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start'
                     >
                         <a href={t("footer_git-url")}

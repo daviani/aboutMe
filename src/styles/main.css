@@ -8,6 +8,11 @@ body {
     right: 0;
 }
 
+.footer_box {
+    width: 120px;
+    text-align: right;
+}
+
 .dropdown:focus-within .dropdown-menu {
     opacity:1;
     transform: translate(0) scale(1);

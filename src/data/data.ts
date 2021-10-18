@@ -18,8 +18,8 @@ export const sections = [
                 id: 3,
                 img: 'https://nano.site/img/icon/mail.png',
                 title: 'Mail',
-                subTitle: 'd.fillatre.pro@gmail.com',
-                url: 'mailto:d.fillatre.pro@gmail.com:',
+                subTitle: 'contact@daviani.dev',
+                url: 'mailto:contact@daviani.dev:',
             },
             {
                 id: 4,

@@ -10,7 +10,7 @@ const SwitchLang = () => {
     };
     return (
         <>
-            <div className='outline-none focus:outline-none px-4 py-2 text-primary dropdown'>
+            <div className='outline-none focus:outline-none px-4 py-2 text-blue-700 dark:text-blue-200 dropdown'>
                 <button type='button' aria-haspopup='true' aria-expanded='true'>
                     <FontAwesomeIcon icon={faGlobe} />
                 </button>

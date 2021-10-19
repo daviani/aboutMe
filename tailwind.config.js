@@ -1,30 +1,21 @@
 module.exports = {
-  // Uncomment the line below to enable the experimental Just-in-Time ("JIT") mode.
-  // https://tailwindcss.com/docs/just-in-time-mode
-  // mode: "jit",
   darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        negative: 'var(--color-negative)',
-        positive: 'var(--color-positive)',
-        'primary-background': 'var(--background-primary)',
-        'sec-background': 'var(--background-sec)',
-        'primary-text': 'var(--color-text-primary)',
+        blue : {
+          800 : '#2E3440',
+          700 : '#4C566A',
+          200 : '#D8DEE9',
+          100 : '#fcfdff',
+          50 : '#E5E9F0'
+        }
       },
     },
-    backgroundColor: (theme) => ({
-      ...theme('colors'),
-    }),
-  },
-  variants: {
-    backgroundColor: ['active'],
+
   },
   plugins: [],
   purge: {
-    // Filenames to scan for classes
     content: [
       "./src/**/*.html",
       "./src/**/*.js",
@@ -33,10 +24,5 @@ module.exports = {
       "./src/**/*.tsx",
       "./public/index.html",
     ],
-    // Options passed to PurgeCSS
-    options: {
-      // Whitelist specific selectors by name
-      // safelist: [],
-    },
   },
 };

@@ -22,11 +22,11 @@ const Header = () => {
                              alt="It's Me"
                         />
                     </div>
-                    <h1 className='mx-auto mb-4 text-4xl font-semibold text-primary  tracking-tighter transition duration-500 ease-in-out transform lg:w-1/2 lg:text-3xl'>
+                    <h1 className='mx-auto mb-4 text-4xl font-semibold text-blue-800 dark:text-blue-100  tracking-tighter transition duration-500 ease-in-out transform lg:w-1/2 lg:text-3xl'>
                         {'<Daviani/>'}
                     </h1>
                     <div
-                        className='mx-auto leading-relaxed text-center text-secondary mb-2.5 text-xs sm:text-base lg:w-1/2'
+                        className='mx-auto leading-relaxed text-center text-blue-700 dark:text-blue-200 mb-2.5 text-xs sm:text-base lg:w-1/2'
                     >
                         {t('header_title')}
                         <br />

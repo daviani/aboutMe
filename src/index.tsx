@@ -1,16 +1,20 @@
-import React, { Suspense } from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import './styles/main.css';
 import './i18n';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ThemeProvider} from './context/themeContext'
 
 ReactDOM.render(
     <React.StrictMode>
-        <Suspense fallback={<div>Loading...</div>}>
-            <App />
-        </Suspense>
+        <ThemeProvider initialTheme=''>
+            <Suspense fallback={<div>Loading...</div>}>
+                <App />
+            </Suspense>
+        </ThemeProvider>
+
     </React.StrictMode>,
     document.getElementById('root')
 )

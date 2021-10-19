@@ -12,16 +12,16 @@ const Card = ({ url, img, title, subTitle}: CardProps) => {
     }
     return (
         <a href={url} target={title}
-           className='flex flex-col m-4 p-8 bg-primary-background rounded-2xl shadow hover:shadow-md bg-gray-50'
+           className='flex flex-col m-4 p-8 bg-blue-50 dark:bg-blue-800 rounded-2xl shadow hover:shadow-md'
         >
             <div className='flex items-center justify-between'>
                 <div className='flex items-center'>
                     {itemPicture(img)}
                     <div className='flex flex-col ml-4'>
-                        <div className='font-medium text-primary leading-none'>
+                        <div className='font-medium text-blue-800 dark:text-blue-100 leading-none'>
                             {title}
                         </div>
-                        <p className='text-sm text-secondary leading-none mt-1'>
+                        <p className='text-sm text-blue-700 dark:text-blue-200 leading-none mt-1'>
                             {subTitle}
                         </p>
                     </div>

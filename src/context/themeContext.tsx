@@ -30,22 +30,22 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider = (props: ThemeProviderProps) => {
-    const [theme, setTheme] = useState(getInitialTheme);
-    const rawSetTheme = (rawTheme:any) => {
-        const root = window.document.documentElement;
-        const isDark = rawTheme === "dark"
-        root.classList.remove(isDark ? "light" : "dark")
-        root.classList.add(rawTheme)
-        localStorage.setItem("color-theme", rawTheme)
-        console.log("rawTheme", rawTheme, "theme", theme)
-    }
-    if (props.initialTheme) {
-        rawSetTheme(props.initialTheme)
-    }
+    const [theme, setTheme] = useState(getInitialTheme)
 
     useEffect(() => {
-        rawSetTheme(theme);
-    }, [theme]);
+        const rawSetTheme = (rawTheme:any) => {
+            const root = window.document.documentElement;
+            const isDark = rawTheme === "dark"
+            root.classList.remove(isDark ? "light" : "dark")
+            root.classList.add(rawTheme)
+            localStorage.setItem("color-theme", rawTheme)
+            console.log("rawTheme", rawTheme, "theme", theme)
+        }
+        if (props.initialTheme) {
+            rawSetTheme(props.initialTheme)
+        }
+        rawSetTheme(theme)
+    }, [theme, props.initialTheme]);
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>

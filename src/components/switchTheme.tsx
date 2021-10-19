@@ -6,7 +6,7 @@ export const SwitchTheme = () => {
     const {theme, setTheme} =useContext(ThemeContext)
 
     return (
-        <div className="transition duration-500 ease-in-out rounded-full p-2">
+        <div className="transition duration-500 ease-in-out rounded-full px-4 py-2">
             {theme === 'dark' ? (
                 <HiSun
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

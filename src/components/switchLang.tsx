@@ -1,7 +1,6 @@
-import {faGlobe} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import React from "react";
 import {useTranslation} from "react-i18next";
+import {HiTranslate} from "react-icons/hi";
 
 const SwitchLang = () => {
     const {i18n} = useTranslation();
@@ -12,7 +11,9 @@ const SwitchLang = () => {
         <>
             <div className='outline-none focus:outline-none px-4 py-2 text-blue-700 dark:text-blue-200 dropdown'>
                 <button type='button' aria-haspopup='true' aria-expanded='true'>
-                    <FontAwesomeIcon icon={faGlobe} />
+                    <HiTranslate
+                        className="text-blue-700 dark:text-blue-200 text-2xl cursor-pointer"
+                    />
                 </button>
                 <div
                     className='opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95'

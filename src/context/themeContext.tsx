@@ -3,7 +3,7 @@ import React, {createContext, useEffect, useState} from "react"
 const getInitialTheme = () => {
     if (typeof window !== "undefined" && window.localStorage) {
         const storedPrefs = window.localStorage.getItem("color-theme")
-        if (typeof storedPrefs === "string") {
+        if (storedPrefs) {
             return storedPrefs
         }
         const userMedia = window.matchMedia("(prefers-color-scheme: dark)")
@@ -25,7 +25,7 @@ export const ThemeContext = createContext<ContextProps>({
 })
 
 interface ThemeProviderProps {
-    initialTheme: string,
+    initialTheme?: string,
     children: React.ReactNode
 }
 
@@ -39,7 +39,6 @@ export const ThemeProvider = (props: ThemeProviderProps) => {
             root.classList.remove(isDark ? "light" : "dark")
             root.classList.add(rawTheme)
             localStorage.setItem("color-theme", rawTheme)
-            console.log("rawTheme", rawTheme, "theme", theme)
         }
         if (props.initialTheme) {
             rawSetTheme(props.initialTheme)

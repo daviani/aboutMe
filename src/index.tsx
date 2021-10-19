@@ -9,7 +9,7 @@ import {ThemeProvider} from './context/themeContext'
 
 ReactDOM.render(
     <React.StrictMode>
-        <ThemeProvider initialTheme=''>
+        <ThemeProvider >
             <Suspense fallback={<div>Loading...</div>}>
                 <App />
             </Suspense>

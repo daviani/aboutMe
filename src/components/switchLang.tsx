@@ -1,6 +1,6 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import {HiTranslate} from "react-icons/hi";
+import {HiGlobeAlt} from "react-icons/hi";
 
 const SwitchLang = () => {
     const {i18n} = useTranslation();
@@ -11,7 +11,7 @@ const SwitchLang = () => {
         <>
             <div className='outline-none focus:outline-none px-4 py-2 text-blue-700 dark:text-blue-200 dropdown'>
                 <button type='button' aria-haspopup='true' aria-expanded='true'>
-                    <HiTranslate
+                    <HiGlobeAlt
                         className="text-blue-700 dark:text-blue-200 text-2xl cursor-pointer"
                     />
                 </button>
@@ -19,10 +19,10 @@ const SwitchLang = () => {
                     className='opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95'
                 >
                     <div
-                        className='absolute right-0 mt-2 origin-top-right bg-secondary-background rounded-md shadow-lg outline-none'
+                        className='absolute right-0 mt-2 origin-top-right bg-blue-100 dark:bg-blue-700 rounded-md shadow-lg outline-none'
                         role='menu'
                     >
-                        <div className='px-4 py-3 text-primary'>
+                        <div className='px-4 py-3 text-blue-700 dark:text-blue-200'>
 
                             <button
                                 className={(i18n.language === 'fr' ? 'text-base font-semibold cursor-not-allowed' : 'text-sm')}

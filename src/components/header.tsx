@@ -17,7 +17,7 @@ const Header = () => {
                     <div
                         className='inline-flex items-center justify-center flex-shrink-0  mx-auto mb-3 rounded-full mt-2.5'
                     >
-                        <img className='rounded-full border-4 border-primary w-40 h-40'
+                        <img className='rounded-full border-4 border-blue-700 dark:border-blue-200 w-40 h-40'
                              src='https://nano.site/api/image/4f8a5c5f-d9ab-46fe-b28f-08d8d81aa339'
                              alt="It's Me"
                         />

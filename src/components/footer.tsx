@@ -1,10 +1,11 @@
-import {useTranslation} from "react-i18next";
-import {faHeart} from "@fortawesome/free-solid-svg-icons"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {useTranslation} from "react-i18next"
 import React from "react";
+import {FaReact} from 'react-icons/fa'
+import {SiTailwindcss, SiTypescript} from 'react-icons/si'
 
 const Footer = () => {
     const {t} = useTranslation();
+
     return (
         <footer className='w-full py-5 px-4 '>
             <div className='flex items-center justify-between'>
@@ -16,11 +17,16 @@ const Footer = () => {
                         {t("footer_title")}
                     </h2>
                 </div>
-                <p className='inline-flex text-blue-700 dark:text-blue-200 px-2 text-xs sm:text-base '>
+                <div className='inline-flex text-blue-700 dark:text-blue-200 px-2 text-xs sm:text-base '>
                     {t("footer_main-title")}
-                    <FontAwesomeIcon className='mx-1 mt-0 sm:mt-1' icon={faHeart} />
+                    <FaReact className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
+                    {' , '}
+                    <SiTypescript className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
+                    {' , '}
+                    <SiTailwindcss className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
+                    {'  '}
                     {t("footer_main-subtitle")}
-                </p>
+                </div>
                 <div className='footer_box'>
                     <span className='inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start'
                     >

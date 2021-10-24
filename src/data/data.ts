@@ -41,9 +41,9 @@ export const sections = [
         items: [
             {
                 id: 6,
-                img: 'https://daviani.dev/CV-Daviani_Web-developer.pdf',
+                img: 'https://img2.freepng.fr/20180629/lup/kisspng-curriculum-vitae-job-hunting-rsum-employment-cv-5b361fa515ed08.7830471615302737010898.jpg',
                 title: 'Mon CV',
-                url: '',
+                url: 'https://daviani.dev/CV-Daviani_Web-developer.pdf',
             },
             {
                 id: 7,

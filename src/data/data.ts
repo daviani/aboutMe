@@ -29,7 +29,7 @@ export const sections = [
             },
             {
                 id: 5,
-                img: 'http://www.doigtdecole.com/wp-content/uploads/2020/03/logo-rond-twitter-945x945.png',
+                img: 'https://www.doigtdecole.com/wp-content/uploads/2020/03/logo-rond-twitter-945x945.png',
                 title: 'Twitter',
                 url: 'https://twitter.com/FDaviani',
             },
@@ -41,13 +41,13 @@ export const sections = [
         items: [
             {
                 id: 6,
-                img: 'https://i.pinimg.com/originals/26/f6/08/26f6088b4c68068884c0d9282fccd94a.jpg',
+                img: 'https://daviani.dev/CV-Daviani_Web-developer.pdf',
                 title: 'Mon CV',
                 url: '',
             },
             {
                 id: 7,
-                img: 'https://fillatredav.fr/assets/img/favicon.ico',
+                img: 'https://daviani.dev/assets/img/favicon.ico',
                 title: 'Mon portfolio',
                 url: 'https://daviani.dev',
             },

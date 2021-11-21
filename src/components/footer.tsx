@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <footer className='w-full py-5 px-4 '>
-            <div className='flex items-center justify-between'>
+            <div className='flex flex-col md:flex-row items-center justify-between'>
                 <div className='inline-flex items-center '>
                     <div className='w-3 h-3 p-2 mr-2 rounded-full bg-gradient-to-tr from-blue-100 to-blue-700' />
                     <h2
@@ -17,17 +17,17 @@ const Footer = () => {
                         {t("footer_title")}
                     </h2>
                 </div>
-                <div className='inline-flex text-blue-700 dark:text-blue-200 px-2 text-xs sm:text-base '>
+                <div className='inline-flex text-blue-700 dark:text-blue-200 px-2 text-base m-3 md:m-0 '>
                     {t("footer_main-title")}
                     <FaReact className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
                     {' , '}
                     <SiTypescript className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
                     {' , '}
-                    <SiTailwindcss className='text-blue-700 dark:text-blue-200 text-2xl  mx-1' />
+                    <SiTailwindcss className='text-blue-700 dark:text-blue-200 text-2xl mx-1' />
                     {'  '}
                     {t("footer_main-subtitle")}
                 </div>
-                <div className='footer_box'>
+                <div className='md:footer_box'>
                     <span className='inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start'
                     >
                         <a href={t("footer_git-url")}

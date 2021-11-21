@@ -14,7 +14,7 @@ function App() {
             <div className='bg-blue-200 dark:bg-blue-800 shadow-xl'>
                 <Header />
             </div>
-            <div className=' p-4 w-1/2 mx-auto  '>
+            <div className='p-4 sm:w-1/2 w-2/3 mx-auto  '>
                 {sections.map((section) =>
                     <div key={section.title} >
                         <p className='text-3xl text-blue-700 dark:text-blue-200 font-extrabold text-center mt-2.5'>

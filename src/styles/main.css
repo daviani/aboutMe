@@ -8,13 +8,20 @@ body {
     right: 0;
 }
 
+.dropdown:focus-within .dropdown-menu {
+    opacity:1;
+    transform: translate(0) scale(1);
+    visibility: visible;
+}
+
 .footer_box {
     width: 120px;
     text-align: right;
 }
 
-.dropdown:focus-within .dropdown-menu {
-    opacity:1;
-    transform: translate(0) scale(1);
-    visibility: visible;
+@media screen and (max-width: 768px) {
+    .footer_box {
+        width: 120px;
+        text-align: center;
+    }
 }
